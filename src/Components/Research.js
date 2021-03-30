@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 
-class Testimonials extends Component {
+class Research extends Component {
   render() {
 
     if(this.props.data){
-      var testimonials = this.props.data.testimonials.map(function(testimonials){
-        return  <li key={testimonials.user}>
+      var research = this.props.data.research.map(function(research){
+        return  <li key={research.user}>
             <blockquote>
-               <p>{testimonials.text}</p>
-               <cite>{testimonials.user}</cite>
+               <h3>{research.subject}</h3>
+               <p>{research.text}</p>
+               {/* <cite>{research.user}</cite> */}
             </blockquote>
          </li>
       })
     }
 
     return (
-      <section id="testimonials">
+      <section id="research">
       <div className="text-container">
          <div className="row">
 
             <div className="two columns header-col">
-               <h1><span>Client Testimonials</span></h1>
+               <h1><span>Research</span></h1>
             </div>
 
             <div className="ten columns flex-container">
                   <ul className="slides">
-                      {testimonials}
+                      {research}
                   </ul>
                </div>
             </div>
@@ -35,4 +36,4 @@ class Testimonials extends Component {
   }
 }
 
-export default Testimonials;
+export default Research;
