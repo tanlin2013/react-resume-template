@@ -10,10 +10,10 @@
    b. Header Styles
    c. About Section
    d. Bio Section
-   e. Code Section
-   f. Call To Action Section
-   g. Research Section
-   h. Publications Section
+   e. Research Section
+   f. Code Section
+   g. Publications Section
+   h. Call To Action Section
    i. Footer
 
 ===================================================================== */
@@ -416,8 +416,163 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 80%;  }
 } 
 
+/* ------------------------------------------------------------------
+/* e. Research
 /* ------------------------------------------------------------------ */
-/* e. Code Section
+
+#research {
+   background: #1B1B1B;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   background-attachment: fixed;
+
+   position: relative;
+   min-height: 200px;
+   width: 100%;
+   overflow: hidden;
+}
+#research .text-container {
+   padding-top: 96px;
+   padding-bottom: 66px;
+}
+#research h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+   padding-bottom: 72px;
+}
+/* #research h1 span { display: none; } */
+#research .header-col { padding-top: 9px; }
+#research .header-col h1:before {
+   font-family: 'FontAwesome';
+   content: "\f135";
+	padding-right: 10px;
+	font-size: 48px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
+}
+
+/*	Blockquotes */
+#research blockquote {
+   margin: 0 0px 30px 0px;
+   padding-left: 0;
+   position: relative;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+#research blockquote:before { content: none; }
+#research blockquote h3 {
+   font: 24px/26px 'opensans-bold', sans-serif;
+   color: #fff;
+}
+#research blockquote p {
+   font-family: 'librebaskerville-italic', serif;
+   padding: 0;
+   font-size: 18px;
+   line-height: 48px;
+   color: #B4B4B4;
+}
+#research blockquote cite {
+   display: block;
+   font-size: 12px;
+   font-style: normal;
+   line-height: 18px;
+   color: #fff;
+}
+#research blockquote cite:before { content: "\2014 \0020"; }
+#research blockquote cite a,
+#research blockquote cite a:visited { color: #8B9798; border: none }
+
+/* Flex Slider
+/* ------------------------------------------------------------------ */
+
+/* Reset */
+.flexslider a:active,
+.flexslider a:focus  { outline: none; }
+.slides,
+.flex-control-nav,
+.flex-direction-nav { margin: 0; padding: 0; list-style: none; }
+.slides li { margin: 0; padding: 0;}
+.slides h2 { color: #F0F0F0; padding-bottom: 10px;}
+
+/* Necessary Styles */
+.flexslider {
+   position: relative;
+   zoom: 1;
+   margin: 0;
+   padding: 0;
+}
+.flexslider .slides { zoom: 1; }
+.flexslider .slides > li { position: relative; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
+/* Suggested container for slide animation setups. Can replace this with your own */
+.flex-container { zoom: 1; position: relative; }
+
+/* Clearfix for .slides */
+.slides:before,
+.slides:after {
+   content: " ";
+   display: table;
+}
+.slides:after {
+   clear: both;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child { display: block; }
+
+/* Slider Styles */
+.slides { zoom: 1; }
+.slides > li {
+   /*margin-right: 5px; */
+   overflow: hidden;
+}
+
+/* Control Nav */
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    text-align: left;
+}
+.flex-control-nav li {
+    margin: 0 6px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.flex-control-paging li a {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background: #ddd;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
+}
+.flex-control-paging li a:hover {
+    background: #CCC;
+    background: rgba(255, 255, 255, .7);
+}
+.flex-control-paging li a.flex-active {
+    background: #fff;
+    background: rgba(255, 255, 255, .9);
+    cursor: default;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Code Section
 /* ------------------------------------------------------------------ */
 
 #code {
@@ -588,219 +743,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* ------------------------------------------------------------------ */
-/* f. Call To Action Section
-/* ------------------------------------------------------------------ */
-
-#call-to-action {
-   background: #212121;
-   padding-top: 66px;
-   padding-bottom: 48px;
-}
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0ac";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
-#call-to-action .action {
-   margin-top: 12px;
-}
-#call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
-#call-to-action h2 a {
-   color: inherit;
-}
-#call-to-action p {
-   color: #636363;
-   font-size: 17px;
-}
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
-#call-to-action .button:hover,
-#call-to-action .button:active {
-   background: #FFFFFF;
-   color: #0D0D0D;
-}
-#call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif;
-	color: #D8D8D8;
-}
-
-/* ------------------------------------------------------------------
-/* g. Research
-/* ------------------------------------------------------------------ */
-
-#research {
-   background: #1B1B1B;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
-
-   position: relative;
-   min-height: 200px;
-   width: 100%;
-   overflow: hidden;
-}
-#research .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
-}
-#research h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-   padding-bottom: 72px;
-}
-/* #research h1 span { display: none; } */
-#research .header-col { padding-top: 9px; }
-#research .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f135";
-	padding-right: 10px;
-	font-size: 48px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
-
-/*	Blockquotes */
-#research blockquote {
-   margin: 0 0px 30px 0px;
-   padding-left: 0;
-   position: relative;
-   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#research blockquote:before { content: none; }
-#research blockquote h3 {
-   font: 24px/26px 'opensans-bold', sans-serif;
-   color: #fff;
-}
-#research blockquote p {
-   font-family: 'librebaskerville-italic', serif;
-   padding: 0;
-   font-size: 18px;
-   line-height: 48px;
-   color: #B4B4B4;
-}
-#research blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-   color: #fff;
-}
-#research blockquote cite:before { content: "\2014 \0020"; }
-#research blockquote cite a,
-#research blockquote cite a:visited { color: #8B9798; border: none }
-
-/* Flex Slider
-/* ------------------------------------------------------------------ */
-
-/* Reset */
-.flexslider a:active,
-.flexslider a:focus  { outline: none; }
-.slides,
-.flex-control-nav,
-.flex-direction-nav { margin: 0; padding: 0; list-style: none; }
-.slides li { margin: 0; padding: 0;}
-.slides h2 { color: #F0F0F0; padding-bottom: 10px;}
-
-/* Necessary Styles */
-.flexslider {
-   position: relative;
-   zoom: 1;
-   margin: 0;
-   padding: 0;
-}
-.flexslider .slides { zoom: 1; }
-.flexslider .slides > li { position: relative; }
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
-/* Suggested container for slide animation setups. Can replace this with your own */
-.flex-container { zoom: 1; position: relative; }
-
-/* Clearfix for .slides */
-.slides:before,
-.slides:after {
-   content: " ";
-   display: table;
-}
-.slides:after {
-   clear: both;
-}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child { display: block; }
-
-/* Slider Styles */
-.slides { zoom: 1; }
-.slides > li {
-   /*margin-right: 5px; */
-   overflow: hidden;
-}
-
-/* Control Nav */
-.flex-control-nav {
-    width: 100%;
-    position: absolute;
-    bottom: -20px;
-    text-align: left;
-}
-.flex-control-nav li {
-    margin: 0 6px;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-}
-.flex-control-paging li a {
-    width: 12px;
-    height: 12px;
-    display: block;
-    background: #ddd;
-    background: rgba(255, 255, 255, .3);
-    cursor: pointer;
-    text-indent: -9999px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 20px;
-    box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
-}
-.flex-control-paging li a:hover {
-    background: #CCC;
-    background: rgba(255, 255, 255, .7);
-}
-.flex-control-paging li a.flex-active {
-    background: #fff;
-    background: rgba(255, 255, 255, .9);
-    cursor: default;
-}
-
-/* ------------------------------------------------------------------ */
-/* h. Publications Section
+/* g. Publications Section
 /* ------------------------------------------------------------------ */
 
 #publications {
@@ -935,6 +878,62 @@ call-to-action .button {
    border: none;
 }
 
+/* ------------------------------------------------------------------ */
+/* h. Call To Action Section
+/* ------------------------------------------------------------------ */
+
+#call-to-action {
+   background: #212121;
+   padding-top: 66px;
+   padding-bottom: 48px;
+}
+#call-to-action h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+}
+#call-to-action h1 span { display: none; }
+#call-to-action .header-col h1:before {
+   font-family: 'FontAwesome';
+   content: "\f0ac";
+	padding-right: 10px;
+	font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
+}
+#call-to-action .action {
+   margin-top: 12px;
+}
+#call-to-action h2 {
+   font: 28px/36px 'opensans-bold', sans-serif;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
+#call-to-action h2 a {
+   color: inherit;
+}
+#call-to-action p {
+   color: #636363;
+   font-size: 17px;
+}
+/*#
+call-to-action .button {
+	color:#fff;
+   background: #0D0D0D;
+}
+*/
+#call-to-action .button:hover,
+#call-to-action .button:active {
+   background: #FFFFFF;
+   color: #0D0D0D;
+}
+#call-to-action p span {
+	font-family: 'opensans-semibold', sans-serif;
+	color: #D8D8D8;
+}
 
 /* ------------------------------------------------------------------ */
 /* i. Footer
