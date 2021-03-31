@@ -17,19 +17,17 @@ class Publications extends Component {
 
         <bibtex src={bibsource}></bibtex>
         
-         <div className="row section-head">
+        <div className="row section-head">
 
-            <div className="two columns header-col">
+          <div className="two columns header-col">
+            <h1><span>Publications</span></h1>
+          </div>
+          
+          <div className="ten columns">
+            <div id="bibtex_display"></div>
+          </div>
 
-               <h1><span>Publications</span></h1>
-
-            </div>
-            
-            <div className="ten columns">
-              <div id="bibtex_display"></div>
-            </div>
-
-         </div>
+        </div>
 
       </section>
     );
