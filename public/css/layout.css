@@ -66,7 +66,7 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #b3b3b3;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -203,7 +203,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #cccccc;
 }
 #about .profile-pic {
    position: relative;
@@ -236,7 +236,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #bio {
-   background: #000000;
+   background: #1a1a1a;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -271,9 +271,12 @@ ul#nav li.current a { color: #F06000; }
 }
 #bio .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #B4B4B4;
+   color: #d9d9d9;
    margin-bottom: 18px;
    margin-top: 9px;
+}
+#bio .description {
+   color: #cccccc;
 }
 #bio .info span {
    margin-right: 5px;
@@ -281,13 +284,17 @@ ul#nav li.current a { color: #F06000; }
 }
 #bio .date {
    font: 15px/24px 'opensans-regular', sans-serif;
-   color: #B4B4B4;
+   color: #d9d9d9;
    margin-top: 6px;
 }
 
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
+
+.skill .main-col p {
+   color: #cccccc;
+}
 
 .bars {
 	width: 95%;
@@ -308,7 +315,7 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+   color: #cccccc;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
@@ -322,7 +329,7 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+  	background: #008080;
    display: inline-block;
   	height: 42px;
    line-height: 42px;
@@ -421,7 +428,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #research {
-   background: #1B1B1B;
+   background: #2b2b2b;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
@@ -442,13 +449,13 @@ ul#nav li.current a { color: #F06000; }
    color: #fff;
    padding-bottom: 72px;
 }
-/* #research h1 span { display: none; } */
+#research h1 span { display: none; }
 #research .header-col { padding-top: 9px; }
 #research .header-col h1:before {
    font-family: 'FontAwesome';
    content: "\f135";
 	padding-right: 10px;
-	font-size: 48px;
+	font-size: 72px;
    line-height: 72px;
    text-align: left;
    float: left;
@@ -472,7 +479,7 @@ ul#nav li.current a { color: #F06000; }
    padding: 0;
    font-size: 18px;
    line-height: 48px;
-   color: #B4B4B4;
+   color: #bfbfbf;
 }
 #research blockquote cite {
    display: block;
@@ -747,10 +754,10 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #publications {
-   background: #191919;
+   background: #1a1a1a;
    padding-top: 96px;
    padding-bottom: 102px;
-   color: #636363;
+   color: #cccccc;
 }
 #publications .section-head { margin-bottom: 42px; }
 
@@ -948,13 +955,14 @@ footer {
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
+footer a, footer a:visited { color: #cccccc; }
 footer a:hover, footer a:focus { color: #fff; }
 
 /* copyright */
 footer .copyright {
     margin: 0;
     padding: 0;
+    color: #cccccc;
  }
 footer .copyright li {
     display: inline-block;
@@ -980,6 +988,7 @@ footer .social-links {
    margin: 18px 0 30px 0;
    padding: 0;
    font-size: 30px;
+   color: #cccccc;
 }
 footer .social-links li {
     display: inline-block;
